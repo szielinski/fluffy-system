@@ -51,7 +51,7 @@ public class BinarysearchTests {
         for (int i = 0; i < testArr.length; i++) {
             testArr[i] = r.nextInt();
         }
-
+        Arrays.sort(testArr);
         assertEquals(testArr[14], testArr[Binarysearch.binaryserach(testArr, testArr[14])]);
     }
 }
